@@ -1,18 +1,15 @@
 import 'dart:collection';
 
 void main(List<String> args) {
-  
-  // Fila: coleção ordenada, sem index, adiciona e remove itens do início e fim
-  Queue items = Queue();
-  items.add(1);
-  items.add(2);
-  items.add(3);
-
-  items.addFirst(0);
-  items.addLast(4);
-  items.removeFirst();
-  items.removeLast();
-
-  print(items);
-
+  // Fila: Coleção ordenada, sem index, que adiciona e remove itens no inicio e no fim
+  // por padrão ele adiciona no fim da fila.
+  var itens = Queue();
+  itens.addFirst(1);
+  itens.addLast('value');
+  itens.add(13);
+  itens.addFirst(23);
+  print(itens);
+  itens.removeFirst();
+  itens.remove(13);
+  print(itens);
 }
